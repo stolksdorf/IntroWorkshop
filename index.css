@@ -11,9 +11,9 @@ button{
 	border : none;
 	outline : 0;
 	font-weight: 800;
-	font-size : 1.1em;
+	font-size : 0.9em;
 	color : white;
-	padding : 10px 20px;
+	padding : 5px 15px;
 	text-transform: uppercase;
 	cursor : pointer;
 }
@@ -32,6 +32,28 @@ header{
 header img.logo{
 	height : 30px;
 	margin-top: 10px;
+	float : left;
+	margin-right: 20px;
+}
+header .stepContainer{
+	margin-top: 10px;
+	display: inline-block;
+}
+header .rightContainer{
+	float : right;
+	margin-top: 5px;
+	margin-right: 10px;
+}
+
+header button.step{
+	border: 1px white solid;
+	background-color: transparent;
+	font-size: 0.7em;
+}
+header button.step:hover{
+	color : black;
+	background-color: white;
+	opacity: 1.0;
 }
 
 h3{
@@ -40,7 +62,7 @@ h3{
 .editorContainer{
 	display: inline-block;
 	vertical-align: top;
-	height : calc(100% - 130px);
+	height : calc(100% - 90px);
 	width : 49%;
 }
 .editor {

@@ -46,27 +46,6 @@ var replaceTextInEditor = function(editor, target, replacement){
 	}
 }
 
-
-
-//Add in our jQuery hooks
-$('.saveBtn').click(function(){
-	saveCodeToLocalStorage();
-})
-
-$('.launchBtn').click(function(){
-	saveCodeToLocalStorage();
-	previewInNewWindow();
-});
-
-$('.step2').click(function(){
-	replaceTextInEditor(htmlEditor, 'test');
-
-	$.get('/test.txt', function(res){
-		console.log(res);
-	});
-})
-
-
 var gotoStep1 = function(){
 	$.get('steps/step1.html', function(res){
 		htmlEditor.setValue(res)
@@ -80,7 +59,7 @@ var gotoStep2 = function(){
 		replaceTextInEditor(htmlEditor, "<-- Code for Step 2 -->", res)
 	});
 	$.get('steps/step2.css', function(res){
-		replaceTextInEditor(cssEditor, "<-- Code for Step 2 -->", res)
+		replaceTextInEditor(cssEditor, "/* Code for Step 2 */", res)
 	});
 }
 var gotoStep3 = function(){
@@ -88,7 +67,7 @@ var gotoStep3 = function(){
 		replaceTextInEditor(htmlEditor, "<-- Code for Step 3 -->", res)
 	});
 	$.get('steps/step3.css', function(res){
-		replaceTextInEditor(cssEditor, "<-- Code for Step 3 -->", res)
+		replaceTextInEditor(cssEditor, "/* Code for Step 3 */", res)
 	});
 }
 var gotoStep4 = function(){
@@ -96,6 +75,17 @@ var gotoStep4 = function(){
 		replaceTextInEditor(htmlEditor, "<-- Code for Step 4 -->", res)
 	});
 	$.get('steps/step4.css', function(res){
-		replaceTextInEditor(cssEditor, "<-- Code for Step 4 -->", res)
+		replaceTextInEditor(cssEditor, "/* Code for Step 4 */", res)
 	});
 }
+
+
+//Add in our jQuery hooks
+$('.saveBtn').click(function(){
+	saveCodeToLocalStorage();
+})
+
+$('.launchBtn').click(function(){
+	saveCodeToLocalStorage();
+	previewInNewWindow();
+});

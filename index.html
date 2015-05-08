@@ -6,24 +6,29 @@
 
 	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/ace/1.1.9/ace.js"></script>
 	<link rel="Stylesheet" type="text/css" href="index.css" />
+
+	<title>Workshop - Brainstation</title>
 </head>
 <body>
 	<header>
 		<img class='logo' src='http://static1.squarespace.com/static/5478c6d5e4b04456c820fe69/t/54ee493fe4b036f64dca6e66/1431021193974/?format=1500w' />
 
-		<button class='saveBtn'>
-			<i class='fa fa-save'></i> Save
-		</button>
+		<div class='stepContainer'>
+			<button id='step1' class='step'>Step 1</button>
+			<button id='step2' class='step'>Step 2</button>
+			<button id='step3' class='step'>Step 3</button>
+			<button id='step4' class='step'>Step 4</button>
+		</div>
 
-		<button class='launchBtn'>
-			Launch <i class='fa fa-external-link'></i>
-		</button>
+		<div class='rightContainer'>
+			<button class='saveBtn'>
+				<i class='fa fa-save'></i> Save
+			</button>
+			<button class='launchBtn'>
+				Launch <i class='fa fa-external-link'></i>
+			</button>
+		</div>
 	</header>
-
-	<div class='stepContainer'>
-		<button class='step2'>Step2</button>
-	</div>
-
 	<div class='editorContainer'>
 		<h3>HTML</h3>
 		<div id="htmlEditor" class='editor'></div>
@@ -35,6 +40,4 @@
 
 </body>
 <script type="text/javascript" src="index.js"></script>
-
-
 </html>
