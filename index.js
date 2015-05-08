@@ -89,3 +89,16 @@ $('.launchBtn').click(function(){
 	saveCodeToLocalStorage();
 	previewInNewWindow();
 });
+
+$('#step1').click(function(){
+	gotoStep1();
+})
+$('#step2').click(function(){
+	gotoStep2();
+})
+$('#step3').click(function(){
+	gotoStep3();
+})
+$('#step4').click(function(){
+	gotoStep4();
+})
