@@ -1,0 +1,49 @@
+html,body{
+	margin : 0;
+	background-color: #272822;
+	color : white;
+	font-family: 'Nunito', sans-serif;
+}
+
+button{
+	font-family: 'Nunito', sans-serif;
+	background-color: #3397fa;
+	border : none;
+	outline : 0;
+	font-weight: 800;
+	font-size : 1.1em;
+	color : white;
+	padding : 10px 20px;
+	text-transform: uppercase;
+	cursor : pointer;
+}
+button:hover{
+	opacity : 0.8;
+}
+
+button.launchBtn{
+	background-color: #27ae60;
+}
+
+header{
+	height : 50px;
+	background-color: black;
+}
+header img.logo{
+	height : 30px;
+	margin-top: 10px;
+}
+
+h3{
+	margin: 5px 0px;
+}
+.editorContainer{
+	display: inline-block;
+	vertical-align: top;
+	height : calc(100% - 130px);
+	width : 49%;
+}
+.editor {
+	width : 100%;
+	height : 100%;
+}
