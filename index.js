@@ -39,7 +39,7 @@ var replaceTextInEditor = function(editor, target, replacement){
 		regExp: false,
 		preventScroll: true
 	})
-	if(range.start){
+	if(range && range.start){
 		range.start.column = 0
 		range.end.column = Number.MAX_VALUE
 		editor.session.replace(range, replacement)
@@ -65,3 +65,37 @@ $('.step2').click(function(){
 		console.log(res);
 	});
 })
+
+
+var gotoStep1 = function(){
+	$.get('steps/step1.html', function(res){
+		htmlEditor.setValue(res.responseText)
+	});
+	$.get('steps/step1.css', function(res){
+		cssEditor.setValue(res.responseText)
+	});
+}
+var gotoStep2 = function(){
+	$.get('steps/step2.html', function(res){
+		replaceTextInEditor(htmlEditor, "<-- Code for Step 2 -->", res.responseText)
+	});
+	$.get('steps/step2.css', function(res){
+		replaceTextInEditor(cssEditor, "<-- Code for Step 2 -->", res.responseText)
+	});
+}
+var gotoStep3 = function(){
+	$.get('steps/step3.html', function(res){
+		replaceTextInEditor(htmlEditor, "<-- Code for Step 3 -->", res.responseText)
+	});
+	$.get('steps/step3.css', function(res){
+		replaceTextInEditor(cssEditor, "<-- Code for Step 3 -->", res.responseText)
+	});
+}
+var gotoStep4 = function(){
+	$.get('steps/step4.html', function(res){
+		replaceTextInEditor(htmlEditor, "<-- Code for Step 4 -->", res.responseText)
+	});
+	$.get('steps/step4.css', function(res){
+		replaceTextInEditor(cssEditor, "<-- Code for Step 4 -->", res.responseText)
+	});
+}
