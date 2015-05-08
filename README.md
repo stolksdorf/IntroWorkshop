@@ -7,6 +7,7 @@ This is an improved teaching app for BrainStation's Intro to HTML and CSS worksh
 * No need to log in or create accounts
 * No need to create unique project names
 * Saving and storage is done completely client-side
+* Generating the preview page is also done completely client-side
 * UI is improved and made to look more like BrainStation's homepage
 * Progressing steps doesn't inject code wherever your cursor is
 * It saves whenever you preview/launch, so no need worrying about that
