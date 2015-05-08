@@ -34,15 +34,13 @@ var saveCodeToLocalStorage = function(){
 var replaceTextInEditor = function(editor, target, replacement){
 	var range = editor.find(target,{
 		wrap: true,
-		caseSensitive: true,
-		wholeWord: true,
-		regExp: false,
-		preventScroll: true
 	})
 	if(range && range.start){
 		range.start.column = 0
 		range.end.column = Number.MAX_VALUE
 		editor.session.replace(range, replacement)
+	}else{
+		console.log('not found');
 	}
 }
 
