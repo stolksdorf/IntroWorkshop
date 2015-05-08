@@ -10,7 +10,7 @@ section.right{
 	border-left : 2px solid #4fbfa6; /* teal */
 }
 /* Article Customization */
-article.contact ul{
+.contact ul{
 	margin-left : -40px;
 	list-style  : none;
 }
