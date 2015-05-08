@@ -69,33 +69,33 @@ $('.step2').click(function(){
 
 var gotoStep1 = function(){
 	$.get('steps/step1.html', function(res){
-		htmlEditor.setValue(res.responseText)
+		htmlEditor.setValue(res)
 	});
 	$.get('steps/step1.css', function(res){
-		cssEditor.setValue(res.responseText)
+		cssEditor.setValue(res)
 	});
 }
 var gotoStep2 = function(){
 	$.get('steps/step2.html', function(res){
-		replaceTextInEditor(htmlEditor, "<-- Code for Step 2 -->", res.responseText)
+		replaceTextInEditor(htmlEditor, "<-- Code for Step 2 -->", res)
 	});
 	$.get('steps/step2.css', function(res){
-		replaceTextInEditor(cssEditor, "<-- Code for Step 2 -->", res.responseText)
+		replaceTextInEditor(cssEditor, "<-- Code for Step 2 -->", res)
 	});
 }
 var gotoStep3 = function(){
 	$.get('steps/step3.html', function(res){
-		replaceTextInEditor(htmlEditor, "<-- Code for Step 3 -->", res.responseText)
+		replaceTextInEditor(htmlEditor, "<-- Code for Step 3 -->", res)
 	});
 	$.get('steps/step3.css', function(res){
-		replaceTextInEditor(cssEditor, "<-- Code for Step 3 -->", res.responseText)
+		replaceTextInEditor(cssEditor, "<-- Code for Step 3 -->", res)
 	});
 }
 var gotoStep4 = function(){
 	$.get('steps/step4.html', function(res){
-		replaceTextInEditor(htmlEditor, "<-- Code for Step 4 -->", res.responseText)
+		replaceTextInEditor(htmlEditor, "<-- Code for Step 4 -->", res)
 	});
 	$.get('steps/step4.css', function(res){
-		replaceTextInEditor(cssEditor, "<-- Code for Step 4 -->", res.responseText)
+		replaceTextInEditor(cssEditor, "<-- Code for Step 4 -->", res)
 	});
 }
