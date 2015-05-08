@@ -1,4 +1,20 @@
-html, body{
-	margin : 0;
-	background-color: red;
+/* Social Icons */
+.socialIcons{
+	position : absolute;
+	top      : 15px;
+	right    : 15px;
+}
+.socialIcons a.icon{
+	background-color: #4fbfa6; /* teal */
+	display       : inline-block;
+	margin-left   : 10px;
+	padding       : 10px;
+	border-radius : 100%;
+}
+.socialIcons a.icon:hover{
+	background-color: #3aa18a; /* darker teal */
+}
+.socialIcons img{
+	height : 20px;
+	width  : 20px;
 }

@@ -1,4 +1,72 @@
-html, body{
-	margin : 0;
-	background-color: red;
+html,body{
+	height      : 100%;
+	margin      : 0;
+	font-family : Verdana, Geneva, sans-serif;
+	background  : #d8d8d8; /*light grey*/
+	color       : #58595b; /* dark grey */
 }
+h1,h2,h3,h4{
+	margin      : 0px;
+	font-weight : 200;
+}
+h1{
+	color:#4fbfa6; /* teal */
+}
+h2{
+	font-size : 1.2em;
+}
+h3{
+	margin-bottom : 5px;
+	color:#4fbfa6; /* teal */
+	font-size     : 1.2em;
+}
+h4{
+	font-size : 0.8em;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	color:#4fbfa6; /* teal */
+	text-decoration: underline;
+}
+p{
+	line-height : 1.3em;
+}
+.top{
+	height                : 60%;
+	width                 : 100%;
+	background-attachment : fixed;
+	background-position   : bottom;
+	background-size       : cover;
+	background-image      : url('http://brainstation-workshops.com/img/background.jpeg');
+}
+main.profile{
+	position       : relative;
+	width          : 800px;
+	margin         : 0 auto;
+	padding-bottom : 50px;
+	padding-right  : 120px;
+	padding-left   : 120px;
+	background     : white;
+}
+/* Avatar */
+.avatarContainer{
+	margin-bottom : 30px;
+	text-align    : center;
+}
+.avatarContainer img.avatar{
+	height        : 190px;
+	width         : 190px;
+	margin-bottom : 10px;
+	margin-top    : -95px; /* Half of the width and height */
+	border-radius : 100%;
+}
+footer{
+	padding    : 20px 0px;
+	color      : #acaeb0;
+	text-align : center;
+	bottom : 0;
+}
+
+/* Code for Step 2 */

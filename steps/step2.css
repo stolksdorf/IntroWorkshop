@@ -1,4 +1,18 @@
-html, body{
-	margin : 0;
-	background-color: red;
+/* Sections side by side */
+section.left, section.right{
+	display        : inline-block;
+	vertical-align : top;
+	box-sizing     : border-box;
+	width          : 49%;
+	padding-left   : 30px;
 }
+section.right{
+	border-left : 2px solid #4fbfa6; /* teal */
+}
+/* Article Customization */
+article.contact ul{
+	margin-left : -40px;
+	list-style  : none;
+}
+
+/* Code for Step 3 */
