@@ -44,6 +44,19 @@ var replaceTextInEditor = function(editor, target, replacement){
 	}
 }
 
+var downloadFile = function(filename, text) {
+	var element = document.createElement('a');
+	element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+	element.setAttribute('download', filename);
+
+	element.style.display = 'none';
+	document.body.appendChild(element);
+
+	element.click();
+
+	document.body.removeChild(element);
+}
+
 var gotoStep0 = function(){
 	$.get('steps/step0.html', function(res){
 		htmlEditor.setValue(res)
@@ -88,7 +101,14 @@ var gotoStep4 = function(){
 
 //Add in our jQuery hooks
 $('.saveBtn').click(function(){
-	saveCodeToLocalStorage();
+	//saveCodeToLocalStorage();
+
+	downloadFile('style.css', cssEditor.getValue());
+	downloadFile('index.html',
+		"<html><head><link rel='stylesheet' href='style.css' type='text/css'></head><body>" +
+		htmlEditor.getValue() +
+		"</body></html>"
+		);
 })
 
 $('.launchBtn').click(function(){
