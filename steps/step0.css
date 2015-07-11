@@ -1,8 +1,8 @@
 html,body{
 	height      : 100%;
 	margin      : 0;
-	font-family : Verdana, Geneva, sans-serif;
-	background  : #d8d8d8; /*light grey*/
-	color       : #58595b; /* dark grey */
+	font-family : Verdana, sans-serif;
+	background  : #d8d8d8;
+	color       : #58595b;
 }
 /* Code for Step 1 */
