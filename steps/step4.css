@@ -4,15 +4,15 @@
 	top      : 15px;
 	right    : 15px;
 }
-.socialIcons a.icon{
-	background-color: #4fbfa6; /* teal */
+.socialIcons .icon{
+	background-color: #4fbfa6;
 	display       : inline-block;
 	margin-left   : 10px;
 	padding       : 10px;
 	border-radius : 100%;
 }
-.socialIcons a.icon:hover{
-	background-color: #3aa18a; /* darker teal */
+.socialIcons .icon:hover{
+	background-color: #3aa18a;
 }
 .socialIcons img{
 	height : 20px;

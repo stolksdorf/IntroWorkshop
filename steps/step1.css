@@ -1,17 +1,13 @@
-
-h1,h2,h3,h4{
-	margin      : 0px;
-	font-weight : 200;
-}
 h1{
-	color:#4fbfa6; /* teal */
+	color : #4fbfa6;
 }
 h2{
 	font-size : 1.2em;
 }
 h3{
 	margin-bottom : 5px;
-	color:#4fbfa6; /* teal */
+	color         : #4fbfa6;
+	font-weight   : 200;
 	font-size     : 1.2em;
 }
 h4{
@@ -21,13 +17,13 @@ a{
 	text-decoration: none;
 }
 a:hover{
-	color:#4fbfa6; /* teal */
+	color:#4fbfa6;
 	text-decoration: underline;
 }
 p{
 	line-height : 1.3em;
 }
-.top{
+.cityBackground{
 	height                : 60%;
 	width                 : 100%;
 	background-attachment : fixed;
@@ -49,7 +45,7 @@ p{
 	margin-bottom : 30px;
 	text-align    : center;
 }
-.avatarContainer img.avatar{
+.avatarContainer .avatar{
 	height        : 190px;
 	width         : 190px;
 	margin-bottom : 10px;
