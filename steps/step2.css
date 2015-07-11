@@ -1,12 +1,12 @@
 /* Sections side by side */
-section.left, section.right{
+.left, .right{
 	display        : inline-block;
 	vertical-align : top;
 	box-sizing     : border-box;
 	width          : 49%;
 	padding-left   : 30px;
 }
-section.right{
+.right{
 	border-left : 2px solid #4fbfa6; /* teal */
 }
 /* Article Customization */

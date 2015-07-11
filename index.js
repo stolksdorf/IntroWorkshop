@@ -44,12 +44,20 @@ var replaceTextInEditor = function(editor, target, replacement){
 	}
 }
 
-var gotoStep1 = function(){
-	$.get('steps/step1.html', function(res){
+var gotoStep0 = function(){
+	$.get('steps/step0.html', function(res){
 		htmlEditor.setValue(res)
 	});
-	$.get('steps/step1.css', function(res){
+	$.get('steps/step0.css', function(res){
 		cssEditor.setValue(res)
+	});
+}
+var gotoStep1 = function(){
+	$.get('steps/step1.html', function(res){
+		replaceTextInEditor(htmlEditor, "<!-- Code for Step 1 -->", res)
+	});
+	$.get('steps/step1.css', function(res){
+		replaceTextInEditor(cssEditor, "/* Code for Step 1 */", res)
 	});
 }
 var gotoStep2 = function(){
@@ -88,6 +96,9 @@ $('.launchBtn').click(function(){
 	previewInNewWindow();
 });
 
+$('#step0').click(function(){
+	gotoStep0();
+})
 $('#step1').click(function(){
 	gotoStep1();
 })
