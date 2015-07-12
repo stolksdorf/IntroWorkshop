@@ -6,10 +6,10 @@
 }
 .socialIcons .icon{
 	background-color: #4fbfa6;
-	display       : inline-block;
-	margin-left   : 10px;
-	padding       : 10px;
-	border-radius : 100%;
+	display         : inline-block;
+	margin-left     : 10px;
+	padding         : 10px;
+	border-radius   : 100%;
 }
 .socialIcons .icon:hover{
 	background-color: #3aa18a;

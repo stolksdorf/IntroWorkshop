@@ -1,1 +1,8 @@
+/* Changes the dot style for the list */
+.skills ul{
+	margin-left : -20px;
+	margin-top  : 0px;
+	list-style  : circle;
+}
+
 /* Code for Step 4 */

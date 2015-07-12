@@ -9,10 +9,18 @@
 .right{
 	border-left : 2px solid #4fbfa6;
 }
-/* Article Customization */
-.contact ul{
-	margin-left : -40px;
-	list-style  : none;
+
+/* This will style all info sections */
+.infoSection{
+	margin-bottom: 40px;
+}
+
+.contact .icon{
+	height       : 1em;
+	margin-right : 10px;
+}
+.contact div{
+	margin-top: 10px;
 }
 
 /* Code for Step 3 */
