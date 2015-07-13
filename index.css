@@ -29,11 +29,14 @@ header{
 	height : 50px;
 	background-color: black;
 }
-header img.logo{
+header .logo{
 	height : 30px;
 	margin-top: 10px;
 	float : left;
 	margin-right: 20px;
+	font-weight: 800;
+	font-size: 1.2em;
+	padding: 0px 15px;
 }
 header .stepContainer{
 	margin-top: 10px;
