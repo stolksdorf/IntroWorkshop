@@ -1,6 +1,6 @@
 # Intro to Html Workshop
 
-This is an improved teaching app for BrainStation's Intro to HTML and CSS workshop. Check it out [here](http://stolksdorf.github.io/brainstation/)
+This is an improved teaching app for BrainStation's Intro to HTML and CSS workshop. Check it out [here](http://stolksdorf.github.io/IntroWorkshop/)
 
 ### Improvements to the app
 

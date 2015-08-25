@@ -25,13 +25,13 @@ a:hover{
 p{
 	line-height : 1.3em;
 }
-.cityBackground{
+.background{
 	height                : 60%;
 	width                 : 100%;
 	background-attachment : fixed;
 	background-position   : bottom;
 	background-size       : cover;
-	background-image      : url('http://brainstation-workshops.com/img/background.jpeg');
+	background-image      : url('http://jinqiaojs.com/hd/iceland-blue-lagoon-hd-wallpaper-background-vk8.jpg');
 }
 .profile{
 	position       : relative;
