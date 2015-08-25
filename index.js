@@ -22,7 +22,7 @@ cssEditor.setValue(localStorage.getItem(storageCss));
 
 var previewInNewWindow = function(){
 	var newPage = window.open();
-	newPage.document.write("<html><head><style>" + cssEditor.getValue() +
+	newPage.document.write('<html><head><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"><style>' + cssEditor.getValue() +
 	"</style></head><body>" + htmlEditor.getValue() + "</body></html>");
 }
 
